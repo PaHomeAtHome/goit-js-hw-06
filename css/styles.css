@@ -17,7 +17,14 @@ body {
 .logo {
   color: var(--logo-color);
 }
-.list {
+.portfolio-list,
+.site-nav-list,
+.contacts-list,
+.features-list,
+.development-list,
+.footer-list,
+.adress-list,
+.team-list {
   list-style: none;
 }
 .site-nav-list .link {
@@ -40,10 +47,22 @@ body {
   color: var(--background-color);
   background-color: var(--logo-color);
 }
+.filter-item {
+  display: inline;
+  color: var(--title-text-color);
+}
+.filter-list .button {
+  background-color: var(--grey-background-color);
+}
+.filter-list .button:hover,
+.filter-list .button:focus {
+  background-color: var(--hover-color);
+}
+
 /* blue color: #2196F3
     black color: #212121
     grey color: #757575
     adress: rgba(255, 255, 255, 0.6)
     background top under header text color: #F5F4FA
     deep blue color: #2F303A
-*/
+*/ ;
