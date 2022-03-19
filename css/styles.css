@@ -1,0 +1,49 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --logo-color: #2196f3;
+  --background-color: #ffffff;
+  --hero-color: #ffffff;
+  --hover-color: #2196f3;
+  --adress-color: rgba(255, 255, 255, 0.6);
+  --grey-background-color: #f5f4fa;
+  --hero-background-color: #2f303a;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--logo-color);
+}
+.list {
+  list-style: none;
+}
+.site-nav-list .link {
+  color: var(--title-text-color);
+}
+.site-nav-list .link:hover,
+.site-nav-list .link:focus {
+  color: var(--hover-color);
+}
+.site-nav-list .link.current {
+  color: var(--hover-color);
+}
+.hero-title {
+  color: var(--hero-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+.hero-button {
+  color: var(--background-color);
+  background-color: var(--logo-color);
+}
+/* blue color: #2196F3
+    black color: #212121
+    grey color: #757575
+    adress: rgba(255, 255, 255, 0.6)
+    background top under header text color: #F5F4FA
+    deep blue color: #2F303A
+*/
