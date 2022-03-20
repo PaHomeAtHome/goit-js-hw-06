@@ -12,10 +12,24 @@
 body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
-
 .logo {
   color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.top-logo-studio {
+  color: var(--title-text-color);
+}
+.bottom-logo-studio {
+  color: var(--background-color);
 }
 .portfolio-list,
 .site-nav-list,
@@ -29,6 +43,11 @@ body {
 }
 .site-nav-list .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
@@ -37,8 +56,29 @@ body {
 .site-nav-list .link.current {
   color: var(--hover-color);
 }
+.contacts-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--hover-color);
+}
+.hero {
+  text-align: center;
+  background-color: var(--hero-background-color);
+}
 .hero-title {
   color: var(--hero-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .section-title {
   color: var(--title-text-color);
@@ -46,6 +86,83 @@ body {
 .hero-button {
   color: var(--background-color);
   background-color: var(--logo-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  cursor: pointer;
+}
+.features-list {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.features-list .features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.sub-section-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.development-list {
+  text-align: center;
+}
+.team-list {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.footer {
+  background-color: var(--hero-background-color);
+}
+.adress-list {
+  font-style: normal;
+  background-color: var(--hero-background-color);
+}
+.tel-link,
+.mail-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--adress-color);
+  text-decoration: none;
+}
+.adress-map {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+  text-decoration: none;
+}
+.adress-map:hover,
+.adress-map:focus,
+.tel-link:hover,
+.tel-link:focus,
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--hover-color);
 }
 .filter-item {
   display: inline;
@@ -53,16 +170,41 @@ body {
 }
 .filter-list .button {
   background-color: var(--grey-background-color);
+  font-family: inherit;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .filter-list .button:hover,
 .filter-list .button:focus {
   background-color: var(--hover-color);
+  cursor: pointer;
 }
-
-/* blue color: #2196F3
-    black color: #212121
-    grey color: #757575
-    adress: rgba(255, 255, 255, 0.6)
-    background top under header text color: #F5F4FA
-    deep blue color: #2F303A
-*/ ;
+.filter-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.portfolio-list {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.portfolio-list .link {
+  text-decoration: none;
+  color: inherit;
+}
