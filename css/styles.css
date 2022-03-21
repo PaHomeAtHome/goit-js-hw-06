@@ -8,6 +8,7 @@
   --adress-color: rgba(255, 255, 255, 0.6);
   --grey-background-color: #f5f4fa;
   --hero-background-color: #2f303a;
+  --hero-button-hover: #188ce8;
 }
 body {
   background-color: var(--background-color);
@@ -96,6 +97,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   cursor: pointer;
+  background-color: var(--hero-button-hover);
 }
 .features-list {
   font-size: 14px;
@@ -133,6 +135,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: var(--grey-background-color);
 }
 .footer {
   background-color: var(--hero-background-color);
@@ -182,6 +185,7 @@ body {
 .filter-list .button:focus {
   background-color: var(--hover-color);
   cursor: pointer;
+  color: var(--background-color);
 }
 .filter-list {
   font-weight: 500;
