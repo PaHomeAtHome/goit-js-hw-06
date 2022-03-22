@@ -9,12 +9,23 @@
   --grey-background-color: #f5f4fa;
   --hero-background-color: #2f303a;
   --hero-button-hover: #188ce8;
+  --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --filter-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-body {
+.page {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .logo {
   color: var(--logo-color);
@@ -93,6 +104,10 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: var(--hero-button-shadow);
+  padding: 10px 32px;
+  border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -129,6 +144,9 @@ body {
 }
 .development-list {
   text-align: center;
+}
+.team-title {
+  background-color: var(--grey-background-color);
 }
 .team-list {
   font-size: 16px;
@@ -180,12 +198,16 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
 }
 .filter-list .button:hover,
 .filter-list .button:focus {
   background-color: var(--hover-color);
   cursor: pointer;
   color: var(--background-color);
+  box-shadow: var(--filter-button-shadow);
 }
 .filter-list {
   font-weight: 500;
