@@ -10,25 +10,43 @@
   --hero-background-color: #2f303a;
   --hero-button-hover: #188ce8;
   --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --portfolio-border: 1px solid #eeeeee;
   --filter-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.title,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .page {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  width: 1200px;
 }
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header {
-  padding: 32px 215px;
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  margin-right: auto;
 }
 .logo {
   color: var(--logo-color);
@@ -39,6 +57,8 @@
   /* identical to box height */
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: flex;
+  margin-right: 93px;
 }
 .top-logo-studio {
   color: var(--title-text-color);
@@ -46,15 +66,18 @@
 .bottom-logo-studio {
   color: var(--background-color);
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.site-nav.list {
+  display: flex;
 }
-.title,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+.site-nav.list .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav.list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav.list .item:last-child {
+  margin-right: auto;
 }
 .site-nav.list .link {
   color: var(--title-text-color);
@@ -71,6 +94,16 @@ p {
 .site-nav.list .link.current {
   color: var(--hover-color);
 }
+.contacts.list {
+  display: flex;
+}
+.contacts.list .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts.list .item:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts.list .link {
   font-weight: 500;
   font-size: 14px;
@@ -78,6 +111,8 @@ p {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts.list .link:hover,
 .contacts.list .link:focus {
@@ -130,8 +165,13 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
+  display: flex;
+}
+.features.list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.features-title {
+  display: none;
 }
 .features.list .features.title {
   font-size: 14px;
@@ -141,6 +181,7 @@ p {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
+
 .section.title {
   font-weight: 700;
   font-size: 36px;
@@ -161,6 +202,10 @@ p {
 .development.list {
   text-align: center;
   margin-bottom: 94px;
+  display: flex;
+}
+.development.list .item:not(:last-child) {
+  margin-right: 30px;
 }
 .team.title {
   background-color: var(--grey-background-color);
@@ -171,9 +216,20 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--grey-background-color);
+  display: flex;
+}
+.team.list .item {
+  background-color: var(--background-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team.list .item:not(:last-child) {
+  margin-right: 30px;
 }
 .container.team {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .sub-section.title {
   margin-top: 30px;
@@ -184,11 +240,15 @@ p {
 }
 .footer {
   background-color: var(--hero-background-color);
-  padding: 60px 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .adress.list {
   font-style: normal;
   background-color: var(--hero-background-color);
+}
+.adress.list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .tel-link,
 .mail-link {
@@ -246,6 +306,9 @@ p {
   margin-top: 94px;
   margin-bottom: 50px;
 }
+.filter-buttons {
+  display: none;
+}
 .portfolio.title {
   font-weight: 700;
   font-size: 18px;
@@ -261,11 +324,21 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .portfolio.list p {
   margin: 20px 24px;
+}
+.portfolio-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  border: var(--portfolio-border);
+}
+.portfolio-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 .portfolio.list .link {
   text-decoration: none;
