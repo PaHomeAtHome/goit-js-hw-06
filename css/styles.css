@@ -242,8 +242,14 @@ p {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.team.list p {
+.team.list .text {
   margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 .footer {
   background-color: var(--hero-background-color);
