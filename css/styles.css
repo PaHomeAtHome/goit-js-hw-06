@@ -119,6 +119,26 @@ p {
 .contacts.list .item:not(:last-child) {
   margin-right: 50px;
 }
+.email,
+.phone {
+  display: flex;
+}
+.email:hover,
+.email:focus {
+  fill: var(--hover-color);
+}
+.envelope {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.smartphone {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.phone:hover,
+.phone:focus {
+  fill: var(--hover-color);
+}
 .contacts.list .link {
   font-weight: 500;
   font-size: 14px;
