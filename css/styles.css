@@ -1,5 +1,6 @@
 :root {
   --container-width: 1200px;
+  --currentColor: #757575;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --logo-color: #2196f3;
@@ -112,19 +113,18 @@ p {
 .site-nav.list .link.current {
   color: var(--hover-color);
 }
-.contacts.list {
+.contacts {
   display: flex;
+  vertical-align: middle;
   margin-left: auto;
 }
 .contacts.list .item:not(:last-child) {
   margin-right: 50px;
 }
-.email,
-.phone {
-  display: flex;
-}
 .email:hover,
-.email:focus {
+.email:focus,
+.phone:hover,
+.phone:focus {
   fill: var(--hover-color);
 }
 .envelope {
@@ -134,10 +134,7 @@ p {
 .smartphone {
   margin-right: 10px;
   vertical-align: middle;
-}
-.phone:hover,
-.phone:focus {
-  fill: var(--hover-color);
+  fill: currentColor;
 }
 .contacts.list .link {
   font-weight: 500;
@@ -220,7 +217,8 @@ p {
 .features.list .item:not(:last-child) {
   margin-right: 30px;
 }
-.features.list .features.title {
+.features.list .features.title,
+.join.title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -228,9 +226,26 @@ p {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-
+.join.title {
+  color: var(--background-color);
+  text-decoration: none;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+.features-image {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  background-color: var(--grey-background-color);
+  margin-bottom: 30px;
+  align-items: center;
+}
 .development.title,
-.team.title {
+.team.title,
+.clients.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -293,9 +308,73 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
 }
 .team-text {
-  padding: 30px 30px;
+  padding: 30px 32px;
+}
+.social.list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text-color);
+  fill: currentColor;
+}
+.social-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  padding: 12px 12px;
+}
+.social-list > li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+  border-radius: 50%;
+  color: var(--background-color);
+  fill: var(--hover-color);
+}
+.clients.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.clients-icon {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text-color);
+  fill: currentColor;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  color: var(--hover-color);
+  fill: var(--hover-color);
+  border: 1px solid var(--hover-color);
 }
 .footer {
   background-color: var(--hero-background-color);
@@ -306,6 +385,8 @@ p {
   font-style: normal;
   background-color: var(--hero-background-color);
   margin-top: 0px;
+  display: block;
+  margin-top: 20px;
 }
 .adress.list .item:not(:last-child) {
   margin-bottom: 9px;
@@ -332,6 +413,9 @@ p {
 .mail-link:hover,
 .mail-link:focus {
   color: var(--hover-color);
+}
+.join {
+  display: block;
 }
 .filter.list {
   font-weight: 500;
@@ -410,5 +494,21 @@ p {
   display: block;
 }
 .adress {
-  margin-top: 20px;
+  display: flex;
+  margin-right: 70px;
+  list-style: none;
+}
+.social-icon.bottom {
+  color: var(--background-color);
+  fill: var(--background-color);
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-icon.bottom:hover,
+.social-icon.bottom:focus {
+  background-color: var(--hover-color);
+}
+.social.list.bottom .item:not(:last-child) {
+  margin-right: 10px;
 }
