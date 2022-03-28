@@ -152,7 +152,7 @@ p {
   color: var(--hover-color);
 }
 .hero {
-  background-image: url('/images/background.jpg');
+  background-image: url('../images/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
 
