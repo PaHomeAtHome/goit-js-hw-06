@@ -329,7 +329,7 @@ p {
   height: 44px;
   align-items: center;
   justify-content: center;
-  color: var(--primary-text-color);
+  color: #afb1b8;
   fill: currentColor;
 }
 .social-link {
