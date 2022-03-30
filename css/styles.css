@@ -163,8 +163,6 @@ p {
   margin-left: inherit;
   margin-right: inherit;
   text-align: center;
-
-  /* margin-bottom: 94px; */
 }
 .hero.title {
   color: var(--hero-color);
@@ -235,7 +233,6 @@ p {
   color: var(--background-color);
   text-decoration: none;
   font-style: normal;
-  text-align: center;
   margin-bottom: 20px;
 }
 .features-image {
@@ -319,31 +316,26 @@ p {
 }
 .social.list {
   display: flex;
-  margin-left: 15px;
 }
 .social-icon {
   display: flex;
   color: #afb1b8;
   fill: currentColor;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
 }
 .social-link {
-  display: flex;
+  display: block;
   text-decoration: none;
   color: inherit;
-  justify-content: center;
-  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
-.social-list:not(:last-child) {
+.social-icon:not(:last-child) {
   margin-right: 10px;
 }
 .social-icon:hover,
 .social-icon:focus {
   background-color: var(--hover-color);
-  border: 1px solid var(--hover-color);
   border-radius: 50%;
   color: var(--background-color);
   fill: var(--hover-color);
@@ -527,11 +519,8 @@ p {
 .footer-left {
   margin-right: 70px;
 }
-.footer-right {
-  display: block;
-  padding-top: 12px;
-}
 .footer .container {
   display: flex;
   background: #2f303a66;
+  align-items: baseline;
 }
