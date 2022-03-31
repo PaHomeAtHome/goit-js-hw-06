@@ -323,12 +323,13 @@ p {
   fill: currentColor;
 }
 .social-link {
-  display: block;
+  display: flex;
   text-decoration: none;
   color: inherit;
   width: 44px;
   height: 44px;
-  padding: 12px;
+  align-items: center;
+  justify-content: center;
 }
 .social-icon:not(:last-child) {
   margin-right: 10px;
@@ -523,4 +524,9 @@ p {
   display: flex;
   background: #2f303a66;
   align-items: baseline;
+}
+.svg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
