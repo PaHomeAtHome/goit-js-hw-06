@@ -42,9 +42,44 @@
 
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button type="button" class="close-button" data-modal-close><svg class="close" width="30" height="30">
-                        <use href="./images/close.svg#close"></use>
+                    <button type="button" class="close-button" data-modal-close><svg class="close" width="11" height="11">
+                        <use href="./images/icons.svg#close"></use>
                     </svg></button>
+                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <form class="modal-form">
+                        <label class="modal-form-label">Имя <div class="form-field"><input type="text" class="modal-form-input" name="name" id="name">
+                            <span class="modal-form-icon">
+                                <svg width="12" height="12">
+                                    <use href="./images/icons.svg#person"></use>
+                                </svg>
+                            </span></div>
+                        </label>
+                    <label class="modal-form-label">Телефон <div class="form-field"><input type="tel" class="modal-form-input" name="tel" id="tel">
+                        <span class="modal-form-icon">
+                        <svg width="13" height="13">
+                            <use href="./images/icons.svg#phone-black"></use>
+                        </svg>
+                    </span></div>
+                    </label>
+                    <label class="modal-form-label">Почта <div class="form-field"><input type="email" class="modal-form-input" name="mail" id="mail">
+                        <span class="modal-form-icon">
+                        <svg width="15" height="12">
+                            <use href="./images/icons.svg#email-black"></use>
+                        </svg>
+                    </span></div>
+                    </label>
+                    <label class="modal-form-label">Комментарий
+                        <textarea name="comment" id="comment" class="modal-form-textarea" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="checkbox-label">
+                    <input type="checkbox" class="modal-form-checkbox" name="policy" id="policy"><span class="checkbox-icon"><svg width="16" height="15">
+                        <use href="./images/icons.svg#checkbox"></use></svg><svg width="13" height="10" class="check-sign">
+                            <use href="./images/icons.svg#check"></use>
+                        </svg>
+                    </span>Соглашаюсь с рассылкой и принимаю &nbsp<a href="" class="policy-link">Условия договора</a>
+                    </label>
+                   <div class="modal-button-align"><button type="submit" class="modal-form-button">Отправить</button></div>
+                </form>
                 </div>
             </div>
             </div>
@@ -197,33 +232,33 @@
                 <h2 class="clients title">Постоянные клиенты</h2>
                 <ul class="clients list">
                     <li class="clients-icon">
-                        <a href="" class="clients-link"><svg width="106" height="60">
-                            <use href="./images/icons.svg#logo1"></use>
+                        <a href="" class="clients-link"><svg width="41" height="46.7" class="clients-logo">
+                            <use href="./images/icons.svg#logo1" class="clients-item"></use>
                         </svg></a>
                     </li>
                     <li class="clients-icon">
-                        <a href="" class="clients-link"><svg width="106" height="60">
-                                    <use href="./images/icons.svg#logo2"></use>
+                        <a href="" class="clients-link"><svg width="40" height="52" class="clients-logo">
+                                    <use href="./images/icons.svg#logo2" class="clients-item"></use>
                                 </svg></a>
                     </li>
                     <li class="clients-icon">
-                        <a href="" class="clients-link"><svg width="106" height="60">
-                                    <use href="./images/icons.svg#logo3"></use>
+                        <a href="" class="clients-link"><svg width="43.46" height="41.18" class="clients-logo">
+                                    <use href="./images/icons.svg#logo3" class="clients-item"></use>
                                 </svg></a>
                     </li>
                     <li class="clients-icon">
-                        <a href="" class="clients-link"><svg width="106" height="60">
-                                    <use href="./images/icons.svg#logo4"></use>
+                        <a href="" class="clients-link"><svg width="84.44" height="40.62" class="clients-logo">
+                                    <use href="./images/icons.svg#logo4" class="clients-item"></use>
                                 </svg></a>
                     </li>
                     <li class="clients-icon">
-                        <a href="" class="clients-link"><svg width="106" height="60">
-                                    <use href="./images/icons.svg#logo5"></use>
+                        <a href="" class="clients-link"><svg width="62.54" height="45.43" class="clients-logo">
+                                    <use href="./images/icons.svg#logo5" class="clients-item"></use>
                                 </svg></a>
                     </li>
                     <li class="clients-icon">
-                        <a href="" class="clients-link"><svg width="106" height="60">
-                                    <use href="./images/icons.svg#logo6"></use>
+                        <a href="" class="clients-link"><svg width="93.79" height="43.93" class="clients-logo">
+                                    <use href="./images/icons.svg#logo6" class="clients-item"></use>
                                 </svg></a>
                     </li>
                 </ul>
@@ -267,6 +302,20 @@
                 </li>
             </ul>
             </div>
+            <form class="footer-form">
+                <label class="footer-form-label">Подпишитесь на рассылку
+                    <div class="footer-form-item">
+                        <input type="email" class="footer-form-input" name="mail" id="mail" placeholder="E-mail">
+                        <button type="submit" class="footer-form-button">Подписаться
+                            <span class="footer-form-icon">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#send"></use>
+                            </svg>
+                            </span>
+                        </button>
+                    </div>
+                </label>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
