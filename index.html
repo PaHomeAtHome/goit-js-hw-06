@@ -47,26 +47,26 @@
                     </svg></button>
                     <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                     <form class="modal-form">
-                        <label class="modal-form-label">Имя <div class="form-field"><input type="text" class="modal-form-input" name="name" id="name">
+                        <label class="modal-form-label">Имя <input type="text" class="modal-form-input" name="name" id="name">
                             <span class="modal-form-icon">
                                 <svg width="12" height="12">
                                     <use href="./images/icons.svg#person"></use>
                                 </svg>
-                            </span></div>
+                            </span>
                         </label>
-                    <label class="modal-form-label">Телефон <div class="form-field"><input type="tel" class="modal-form-input" name="tel" id="tel">
+                    <label class="modal-form-label">Телефон <input type="tel" class="modal-form-input" name="tel" id="tel">
                         <span class="modal-form-icon">
                         <svg width="13" height="13">
                             <use href="./images/icons.svg#phone-black"></use>
                         </svg>
-                    </span></div>
+                    </span>
                     </label>
-                    <label class="modal-form-label">Почта <div class="form-field"><input type="email" class="modal-form-input" name="mail" id="mail">
+                    <label class="modal-form-label">Почта <input type="email" class="modal-form-input" name="mail" id="mail">
                         <span class="modal-form-icon">
                         <svg width="15" height="12">
                             <use href="./images/icons.svg#email-black"></use>
                         </svg>
-                    </span></div>
+                    </span>
                     </label>
                     <label class="modal-form-label">Комментарий
                         <textarea name="comment" id="comment" class="modal-form-textarea" placeholder="Введите текст"></textarea>
@@ -76,9 +76,9 @@
                         <use href="./images/icons.svg#checkbox"></use></svg><svg width="13" height="10" class="check-sign">
                             <use href="./images/icons.svg#check"></use>
                         </svg>
-                    </span>Соглашаюсь с рассылкой и принимаю &nbsp<a href="" class="policy-link">Условия договора</a>
+                    </span>Соглашаюсь с рассылкой и принимаю &nbsp;<a href="" class="policy-link">Условия договора</a>
                     </label>
-                   <div class="modal-button-align"><button type="submit" class="modal-form-button">Отправить</button></div>
+                   <button type="submit" class="modal-form-button">Отправить</button>
                 </form>
                 </div>
             </div>
@@ -304,17 +304,15 @@
             </div>
             <form class="footer-form">
                 <label class="footer-form-label">Подпишитесь на рассылку
-                    <div class="footer-form-item">
-                        <input type="email" class="footer-form-input" name="mail" id="mail" placeholder="E-mail">
-                        <button type="submit" class="footer-form-button">Подписаться
-                            <span class="footer-form-icon">
-                                <svg width="24" height="24">
-                                    <use href="./images/icons.svg#send"></use>
-                            </svg>
-                            </span>
-                        </button>
-                    </div>
+                        <input type="email" class="footer-form-input" name="mail" id="email" placeholder="E-mail">
                 </label>
+                <button type="submit" class="footer-form-button">Подписаться
+                    <span class="footer-form-icon">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </span>
+                </button>
             </form>
         </div>
     </footer>

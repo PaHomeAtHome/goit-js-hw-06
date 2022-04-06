@@ -275,8 +275,11 @@ p {
 }
 .modal-form {
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 .modal-form-label {
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -291,6 +294,9 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  outline: none;
+  margin-top: 4px;
+  margin-bottom: 10px;
 
   transition-property: border, color, cursor;
   transition-duration: 250ms;
@@ -305,16 +311,11 @@ p {
 .modal-form-input:focus + .modal-form-icon {
   color: #2196F3;
 }
-.form-field {
-  position: relative;
-  margin-top: 4px;
-  margin-bottom: 10px;
-}
 .modal-form-icon {
   display: flex;
   position: absolute;
   left: 12px;
-  top: 50%;
+  top: calc(50% + 4px);
   transform: translateY(-50%);
   color: black;
   fill: currentcolor;
@@ -329,6 +330,7 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+  outline: none;
 
   transition-property: border, cursor;
   transition-duration: 250ms;
@@ -364,6 +366,7 @@ p {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+  margin-left: 12px;
 }
 .modal-form-checkbox {
   -webkit-appearance: none;
@@ -411,6 +414,7 @@ p {
   height: 50px;
   border: none;
   padding: 0;
+  align-self: center;
 
   transition-property: background-color, cursor;
   transition-duration: 250ms;
@@ -420,10 +424,6 @@ p {
 .modal-form-button:focus {
   background: #188CE8;
   cursor: pointer;
-}
-.modal-button-align {
-  display: flex;
-  justify-content: center;
 }
 .close-button {
   position: absolute;
@@ -488,6 +488,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   font-style: normal;
   margin-bottom: 20px;
+}
+.footer-form-label {
+  width: 370px;
+  margin: 0;
 }
 .features-image {
   display: flex;
@@ -883,11 +887,12 @@ position: relative;
   background: #2f303a66;
   align-items: baseline;
 }
-.footer-form-item {
+.footer-form {
   display: flex;
-  margin-top: 20px;
+  align-items: flex-end;
 }
 .footer-form-input {
+  margin-top: 20px;
   margin-right: 12px;
   background: #2F303A;
   width: 358px;
@@ -898,6 +903,7 @@ position: relative;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
 
   transition-property: border, cursor;
   transition-duration: 250ms;
@@ -916,13 +922,11 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 200px;
+  height: 50px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88px;
