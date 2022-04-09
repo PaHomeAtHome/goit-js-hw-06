@@ -1,0 +1,52 @@
+.development__title {
+    font-weight: $title--font-weight;
+    font-size: $title--font-size;
+    line-height: $title--line-height;
+    letter-spacing: $title--letter-spacing;
+    color: $title-text-color;
+    
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.development__list {
+    margin-bottom: 0px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.development__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.development__image {
+    display: block;
+}
+
+.development__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 0;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $development__label--background-color;
+
+    font-weight: $development__label--font-weight;
+    font-size: $development__label--font-size;
+    line-height: $development__label--line-height;
+    letter-spacing: $development__label--letter-spacing;
+    text-transform: $development__label--text-transform;
+    color: $background-color;
+}

@@ -1,0 +1,35 @@
+.close-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 8px;
+    top: 8px;
+    background-color: $background-color;
+    border: $close-button--border;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transition-property: fill, color, cursor;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.close-button__icon {
+    color: $background-color;
+    color: $close-button__icon--color;
+    fill: currentcolor;
+    
+    .close-button:hover &,
+    .close-button:focus & {
+    color: $hover-color;
+    fill: $hover-color;
+    cursor: pointer;
+}
+}

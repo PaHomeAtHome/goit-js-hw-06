@@ -1,0 +1,135 @@
+$container-width: 1200px;
+$currentcolor: #757575;
+$primary-text-color: #757575;
+$logo-color: #2196f3;
+$background-color: #ffffff;
+$hero-color: #ffffff;
+$hover-color: #2196f3;
+$adress-color: rgba(255, 255, 255, 0.6);
+$grey-background-color: #f5f4fa;
+$hero-background-color: #2f303a;
+$portfolio-border: 1px solid #eeeeee;
+$header-border: 1px solid #ececec;
+$filter-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+$title-text-color: #212121;
+$title--font-weight: 700;
+$title--font-size: 36px;
+$title--line-height: 1.16;
+$title--letter-spacing: 0.03em;
+$sub-title--font-family: Roboto, sans-serif;
+$sub-title--font-weight: 700;
+$sub-title--font-size: 14px;
+$sub-title--line-height: 1.14;
+$sub-title--letter-spacing: 0.03em;
+$sub-title--text-transform: uppercase;
+
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$main-font-family: Roboto, sans-serif;
+$page-letter-spacing: 0.03em;
+
+$logo-font-family: Raleway, sans-serif;
+$logo-font-weight: 700;
+$logo-font-size: 26px;
+$logo-line-height: 1.2;
+
+$site-nav__link--font-weight: 500;
+$site-nav__link--font-size: 14px; 
+$site-nav__link--line-height: 1.14;
+$site-nav__link--letter-spacing: 0.02em;
+
+$site-nav__link--current--border: 2px solid $hover-color;
+$site-nav__link--current--border-radius: 2px;
+$site-nav__link--current--background-color: $hover-color;
+
+$contacts--font-weight: 500;
+$contacts--font-size: 14px;
+$contacts--line-height: 1.14;
+$contacts--letter-spacing: 0.02em;
+$contacts--color: $primary-text-color;
+
+$hero--background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+url('../images/background.jpg');
+
+$hero__title--color: $hero-color;
+$hero__title--font-weight: 900;
+$hero__title--font-size: 44px;
+$hero__title--line-height: 1.36;
+$hero__title--letter-spacing: 0.06em;
+
+$hero__button--color: $background-color;
+$hero__button--background-color: $logo-color;
+$hero__button--font-family: inherit;
+$hero__button--font-weight: 700;
+$hero__button--font-size: 16px;
+$hero__button--line-height: 1.88;
+$hero__button--letter-spacing: 0.06em;
+$hero__button--border-radius: 4px;
+$hero__button--box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$hero-button-hover: #188ce8;
+
+$backdrop--background: rgba(0, 0, 0, 0.2);
+
+$modal-window--box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+$modal-window--border-radius: 4px;
+
+$modal-window__title--font-weight: 700;
+$modal-window__title--font-size: 20px;
+$modal-window__title--line-height: 23px;
+$modal-window__title--letter-spacing: 0.03em;
+$modal-window__title--color: #212121;
+
+$modal-window__label--font-weight: 400;
+$modal-window__label--font-size: 12px;
+$modal-window__label--line-height: 1.16;
+$modal-window__label--letter-spacing: 0.01em;
+$modal-window__label--color: #757575;
+
+$modal-window__input--border-color: rgba(33, 33, 33, 0.2);
+
+$modal-window__textarea--placeholder--font-weight: 400;
+$modal-window__textarea--placeholder--font-size: 14px;
+$modal-window__textarea--placeholder--line-height: 1.14;
+$modal-window__textarea--placeholder--letter-spacing: 0.01em;
+$modal-window__textarea--placeholder--color: rgba(117, 117, 117, 0.5);
+
+$modal-window__button--box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$modal-window__button--font-weight: 700;
+$modal-window__button--font-size: 16px;
+$modal-window__button--line-height: 1.88;
+$modal-window__button--letter-spacing: 0.06em;
+
+$checkbox__label--font-weight: 400;
+$checkbox__label--font-size: 14px;
+$checkbox__label--line-height: 1.71;
+$checkbox__label--letter-spacing: 0.03em;
+$checkbox__label--color: #757575;
+
+$close-button--border: 1px solid rgba(0, 0, 0, 0.1);
+
+$close-button__icon--color: #000000;
+
+$features__list--font-size: 14px;
+$features__list--line-height: 1.71;
+$features__list--letter-spacing: 0.03em;
+
+$social-media__item--color: #afb1b8;
+
+$social-media__link--dark--background-color: rgba(255, 255, 255, 0.1);
+
+$subscribe-form__input--background: #2F303A;
+$subscribe-form__input--border: 1px solid rgba(255, 255, 255, 0.3);
+$subscribe-form__input--filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+$development__label--background-color: rgba(47, 48, 58, 0.8);
+
+$development__label--font-weight: 700;
+$development__label--font-size: 14px;
+$development__label--line-height: 1.14;
+$development__label--letter-spacing: 0.03em;
+$development__label--text-transform: uppercase;

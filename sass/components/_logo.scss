@@ -1,0 +1,18 @@
+.logo {
+    color: $logo-color;
+    font-family: $logo-font-family;
+    font-weight: $logo-font-weight;
+    font-size: $logo-font-size;
+    line-height: $logo-line-height;
+    letter-spacing: $page-letter-spacing;
+    display: flex;
+    margin-right: 93px;
+}
+
+.logo__text--black {
+    color: $title-text-color;
+}
+
+.logo__text--white {
+    color: $background-color;
+}
