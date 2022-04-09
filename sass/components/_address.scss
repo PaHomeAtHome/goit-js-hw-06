@@ -1,0 +1,33 @@
+.address {
+    margin-right: 70px;
+}
+
+.adress__list {
+    font-style: normal;
+    background-color: $hero-background-color;
+    margin-top: 0px;
+    display: block;
+    margin-top: 20px;
+}
+
+.adress__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-size: $address__link--font-size;
+    line-height: $address__link--line-height;
+    letter-spacing: $address__link--letter-spacing;
+
+    transition-property: color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    color: $adress-color;
+
+    &--white {color: $background-color;}
+
+    &:hover, &:focus {
+        color: $hover-color;
+    }
+}
