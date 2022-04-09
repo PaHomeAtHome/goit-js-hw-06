@@ -706,9 +706,6 @@ margin-bottom: 50px;
   border: 1px solid var(--hover-color);
 }
 
-.join {
-  display: block;
-}
 .filter__list {
   font-weight: 500;
   font-size: 16px;
