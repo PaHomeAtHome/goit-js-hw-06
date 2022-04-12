@@ -1,5 +1,6 @@
 .address {
-    margin-right: 70px;
+    @media screen and (min-width: 768px) {
+    margin-right: 70px;}
 }
 
 .adress__list {
@@ -8,7 +9,10 @@
     margin-top: 0px;
     display: block;
     margin-top: 20px;
+    text-align: center;
 }
+
+
 
 .adress__item:not(:last-child) {
     margin-bottom: 9px;

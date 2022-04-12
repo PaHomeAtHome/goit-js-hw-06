@@ -2,11 +2,16 @@
     color: $logo-color;
     font-family: $logo-font-family;
     font-weight: $logo-font-weight;
-    font-size: $logo-font-size;
-    line-height: $logo-line-height;
+    font-size: 24px;
+    line-height: 1.166;
     letter-spacing: $page-letter-spacing;
-    display: flex;
-    margin-right: 93px;
+    display: block;
+    justify-items: center;
+
+    @media screen and (min-width: 1200px) {
+        font-size: $logo-font-size;
+        line-height: $logo-line-height;
+    }
 }
 
 .logo__text--black {

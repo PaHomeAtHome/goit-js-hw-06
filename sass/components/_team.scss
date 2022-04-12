@@ -1,14 +1,20 @@
 .team__title {
     font-weight: $title--font-weight;
-    font-size: $title--font-size;
-    line-height: $title--line-height;
+    font-size: $mobile--title--font-size;
+    line-height: $mobile--title--line-height;
     letter-spacing: $title--letter-spacing;
     color: $title-text-color;
     
     text-align: center;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 0;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: $title--font-size;
+        line-height: $title--line-height;
+    }
 }
 
 .team__section {
@@ -21,22 +27,47 @@
     letter-spacing: $team__list--letter-spacing;
     background-color: $grey-background-color;
     text-align: center;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    }
+
 }
 
 .team__image {
     display: block;
+    width: 100%;
 }
 
 .team__item {
     background-color: $background-color;
     border-radius: 0px 0px 4px 4px;
     box-shadow: $modal-window--box-shadow;
+    text-align: center;
+    width: 100%;
 
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+    
+        width: 354px;
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    
     &:not(:last-child) {
         margin-right: 30px;
     }
+}
 }
 
 .team__label {

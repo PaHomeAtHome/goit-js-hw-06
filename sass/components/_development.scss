@@ -1,3 +1,11 @@
+.development__section {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
 .development__title {
     font-weight: $title--font-weight;
     font-size: $title--font-size;
@@ -15,6 +23,8 @@
     margin-bottom: 0px;
     display: flex;
     margin-top: 50px;
+
+
 }
 
 .development__item {

@@ -4,26 +4,40 @@
     position: fixed;
     top: 50%;
     left: 50%;
-
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    height: 100%;
+   
     transform: translate(-50%, -50%);
 
     background: $background-color;
     box-shadow: $modal-window--box-shadow;
     border-radius: $modal-window--border-radius;
     padding: 40px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-window__title {
     font-weight: $modal-window__title--font-weight;
     font-size: $modal-window__title--font-size;
-    line-height: $modal-window__title--line-height;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: $modal-window__title--letter-spacing;
     color: $modal-window__title--color;
     margin: 0;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+        line-height: $modal-window__title--line-height;
+    }
 }
 
 .modal-window__form {
