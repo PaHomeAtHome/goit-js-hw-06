@@ -29,6 +29,10 @@
 <path d="M43.1178 20.3919H40.7844V22.7253H43.1178V20.3919Z" fill="#212121"/>
 </symbol>
 
+<symbol id="menu" width="24" height="16" viewBox="0 0 24 16" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="currentcolor"/>
+</symbol>
+
 <symbol id="check" viewBox="0 0 13 10" fill="none">
 <path d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z" fill="white" stroke="white" stroke-width="0.2"/>
 </symbol>
@@ -49,7 +53,7 @@
 </clipPath>
 </defs>
 </symbol>
-<symbol id="close" width="11" height="11" viewBox="0 0 11 11" fill="none">
+<symbol id="close" viewBox="0 0 11 11" fill="none">
 <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="currentcolor"/>
 </symbol>
 <symbol id="diagram" width="70" height="70" viewBox="0 0 70 70" fill="none">

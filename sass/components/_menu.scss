@@ -1,0 +1,21 @@
+.menu__button {
+    background-color: transparent;
+    padding: 22px;
+    color: $title-text-color;
+}
+
+.menu__icon {
+    display: block;
+
+    .menu__button--is-open & {
+        display: none;
+    }
+}
+
+.close__icon {
+    display: none;
+
+    .menu__button--is-open & {
+        display: block;
+    }
+}
