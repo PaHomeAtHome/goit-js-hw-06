@@ -1,15 +1,22 @@
 .checkbox__label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    
+
     font-weight: $checkbox__label--font-weight;
-    font-size: $checkbox__label--font-size;
-    line-height: $checkbox__label--line-height;
+    font-size: 12px;
+    line-height: 1.166;
     letter-spacing: $checkbox__label--letter-spacing;
     color: $checkbox__label--color;
 
     margin-bottom: 30px;
-    margin-left: 12px;
+    
+
+    @media screen and (min-width: 1200px) {
+        font-size: $checkbox__label--font-size;
+        line-height: $checkbox__label--line-height;
+        margin-left: 12px;
+    }
+    
 }
 
 .checkbox {
@@ -30,7 +37,7 @@
 
     color: $title-text-color;
     fill: currentcolor;
-    margin-right: 9px;
+    margin-right: 7px;
 
     transition-property: background-color, color, border-radius;
     transition-duration: $transition-duration;
@@ -44,15 +51,23 @@
 }
 
 .checkbox__check-sign {
+    display: flex;
+    align-items: center;
     position: absolute;
 }
 
 .checkbox__link {
+    display: inline;
     color: $hover-color;
     font-weight: $checkbox__label--font-weight;
-    font-size: $checkbox__label--font-size;
-    line-height: $checkbox__label--line-height;
     letter-spacing: $checkbox__label--letter-spacing;
     text-decoration: underline 1px $hover-color;
     text-underline-offset: 1px;
+    font-size: 12px;
+    line-height: 1.166;
+
+    @media screen and (min-width: 1200px) {
+        font-size: $checkbox__label--font-size;
+        line-height: $checkbox__label--line-height;
+    }
 }

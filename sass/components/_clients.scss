@@ -18,8 +18,12 @@
 }
 
 .clients__list {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 480px) {
+    display: flex;
+}
 }
 
 .clients__item {
@@ -31,10 +35,11 @@
 
     color: $social-media__item--color;
     fill: currentcolor;
-
-    &:not(:last-child) {
+    
+    @media screen and (max-width: 479px) {&:not(:last-child) {
         margin-bottom: 30px;
-    }
+    }}
+  
 
     @media screen and (min-width: 480px) {
 
@@ -42,9 +47,10 @@
         margin-right: 30px;
     }
     
-    &:nth-child(-n+4) {
+    &:not(:nth-last-child(-n+2)) {
         margin-bottom: 30px;
-    }}
+    }
+}
     
 
 @media screen and (min-width: 768px) {
