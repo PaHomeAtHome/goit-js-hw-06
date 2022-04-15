@@ -39,7 +39,9 @@
 
 .team__image {
     display: block;
-    width: 100%;
+    width: auto;
+    object-fit: cover;
+    height: 460px;
 }
 
 .team__item {

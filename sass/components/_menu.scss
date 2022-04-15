@@ -8,6 +8,13 @@
     align-items: center;
     z-index: 1;
 
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        color: $hover-color;
+    }
+
+
     @media screen and (min-width: 768px) {
         display: none;
     }

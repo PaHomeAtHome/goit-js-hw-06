@@ -8,10 +8,6 @@
     display: block;
     justify-items: center;
 
-    @media screen and (max-width: 767px) {
-        padding: 16px 15px;
-    }
-
     @media screen and (min-width: 1200px) {
         font-size: $logo-font-size;
         line-height: $logo-line-height;
