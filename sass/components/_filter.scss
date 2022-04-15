@@ -4,9 +4,12 @@
     line-height: $filter__list--line-height;
     letter-spacing: $filter__list--letter-spacing;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
+
+
 }
 
 .filter__item {
@@ -15,6 +18,15 @@
     &:not(:last-child) {
         margin-right: 8px;
     }
+
+    margin-bottom: 15px;
+
+@media screen and (min-width: 480px) {
+&:not(:nth-last-child(-n+2)) {
+    margin-bottom: 15px;
+}
+}
+    
 }
 
 .filter__button {
