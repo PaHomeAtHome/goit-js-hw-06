@@ -49,6 +49,11 @@
     line-height: $modal-window__label--line-height;
     letter-spacing: $modal-window__label--letter-spacing;
     color: $modal-window__label--color;
+
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
 }
 
 .modal-window__input {
