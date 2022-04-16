@@ -7,7 +7,7 @@
     letter-spacing: $page-letter-spacing;
     display: block;
     justify-items: center;
-
+    
     @media screen and (min-width: 1200px) {
         font-size: $logo-font-size;
         line-height: $logo-line-height;
@@ -16,6 +16,11 @@
 
 .logo__text--black {
     color: $title-text-color;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+   
 }
 
 .logo__text--white {
