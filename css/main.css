@@ -1359,6 +1359,7 @@ img {
 
 .team__thumb {
   padding: 30px 32px;
+  padding-bottom: 24px;
 }
 
 .clients__title {
@@ -1634,6 +1635,7 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: calc((100% - 60px) / 3);
+    height: 404px;
   }
   .portfolio__item:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -1643,6 +1645,9 @@ img {
   }
   .portfolio__item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
+  }
+  .portfolio__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1686,20 +1691,20 @@ img {
   width: 100%;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
-  padding-top: 41px;
   border-top: none;
   overflow: hidden;
-}
-
-@media screen and (min-width: 480px) {
-  .portfolio__text {
-    padding-top: 20px;
-  }
+  height: 110px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__text {
     height: 146px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__text {
+    height: 110px;
   }
 }
 
