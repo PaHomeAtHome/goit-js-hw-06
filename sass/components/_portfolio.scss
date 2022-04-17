@@ -23,16 +23,31 @@
     text-decoration: none;
     display: block;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .portfolio__item {
     position: relative;
     width: 100%;
     height: 404px;
+    -webkit-tap-highlight-color: transparent;
 
     &:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+        
+        height: 440px;
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+    }
+    
 
     @media screen and (min-width: 1200px) {
 
@@ -64,9 +79,9 @@
 
 .portfolio__link {
     color: inherit;
-    display: flex;
+    display: block;
     width: 100%;
-    height: 404px;
+    height: 100%;
     overflow: hidden;
 
     transition-property: box-shadow;
@@ -87,9 +102,14 @@
     padding: 20px 24px;
     padding-top: 41px;
     border-top: none;
-
+    overflow: hidden;
+    
     @media screen and (min-width: 480px) {
         padding-top: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 146px;
     }
 }
 
@@ -97,6 +117,7 @@
     display: block;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .portfolio__overlay {
