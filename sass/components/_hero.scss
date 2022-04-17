@@ -11,14 +11,26 @@
     margin-right: inherit;
     text-align: center;
 
+    @media screen and (min-resolution: 2dppx) {
+        background-image: $mobile__hero--background-image-2x;
+    }
+
     @media screen and (min-width: 481px) {
         background-image: $tablet__hero--background-image;
+
+        @media screen and (min-resolution: 2dppx) {
+            background-image: $tablet__hero--background-image-2x;
+        }
     }
 
     @media screen and (min-width: 769px) {
         background-image: $hero--background-image;
         padding-bottom: 200px;
         padding-top: 200px;
+        
+        @media screen and (min-resolution: 2dppx) {
+            background-image: $hero--background-image-2x;
+        }
     }
 
     @media screen and (min-width: 1600px) {
