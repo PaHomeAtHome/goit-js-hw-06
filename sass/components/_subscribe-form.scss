@@ -24,6 +24,9 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: flex-end;
+        margin: 0;
+        text-align: left;
+        
     }
 }
 
@@ -52,6 +55,7 @@
         border: 1px solid $hover-color;
         cursor: pointer;
     }
+
 
 }
 
@@ -85,6 +89,10 @@
 
     @media screen and (min-width: 480px) {
         width: 200px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
     }
 
 }

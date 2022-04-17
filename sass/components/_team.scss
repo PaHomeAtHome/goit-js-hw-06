@@ -42,6 +42,10 @@
     width: auto;
     object-fit: cover;
     height: 460px;
+
+    @media screen and (min-width:1200px) {
+        height: 260px;
+    }
 }
 
 .team__item {
@@ -71,6 +75,10 @@
     
     &:not(:last-child) {
         margin-right: 30px;
+        
+    }
+    &:not(:last-child), &:last-child {
+        margin-bottom: 0;
     }
 }
 }
@@ -83,6 +91,8 @@
     color: $title-text-color;
     margin-bottom: 10px;
     text-align: center;
+    margin-top: 0px;
+    
 }
 
 .team__text {

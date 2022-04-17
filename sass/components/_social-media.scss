@@ -6,6 +6,11 @@
         margin-top: 0;
         margin-left: auto;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        margin-left: 0;
+    }
     
 }
 
@@ -21,6 +26,10 @@
     font-style: normal;
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 .social-media__item {
     display: flex;
