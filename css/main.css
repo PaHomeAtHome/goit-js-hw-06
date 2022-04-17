@@ -1659,8 +1659,13 @@ img {
   left: 0;
   top: 0;
   width: 100%;
-  height: 294px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio__thumb {
+    height: 294px;
+  }
 }
 
 .portfolio__link {
