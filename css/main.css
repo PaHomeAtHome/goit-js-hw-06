@@ -1488,6 +1488,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .filter__list {
+    margin-bottom: 50px;
+  }
+}
+
 .filter__item {
   color: #212121;
   margin-bottom: 15px;
@@ -1604,6 +1610,9 @@ img {
   }
   .portfolio__item:not(:nth-child(3n)) {
     margin-right: 30px;
+  }
+  .portfolio__item:nth-child(3n) {
+    margin-right: 0px;
   }
   .portfolio__item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
