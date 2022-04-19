@@ -3,6 +3,7 @@
     position: relative;
     max-width: 450px;
     width: 100%;
+    z-index: 9;
 
     background: $background-color;
     box-shadow: $modal-window--box-shadow;
