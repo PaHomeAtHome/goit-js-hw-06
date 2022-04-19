@@ -2,9 +2,9 @@
     margin-top: 60px;
 
     @media screen and (min-width: 768px) {
-        margin-right: 89px;
+        margin-right: calc(89px - 15px);
         margin-top: 0;
-        margin-left: auto;
+        margin-left: 165px;
     }
 
     @media screen and (min-width: 1200px) {

@@ -934,9 +934,9 @@ picture {
 
 @media screen and (min-width: 768px) {
   .social-media {
-    margin-right: 89px;
+    margin-right: calc(89px - 15px);
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 165px;
   }
 }
 
@@ -1617,9 +1617,6 @@ picture {
 }
 
 .portfolio__item {
-  position: relative;
-  width: 100%;
-  height: 404px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -1630,7 +1627,6 @@ picture {
 @media screen and (min-width: 768px) {
   .portfolio__item {
     width: calc((100% - 30px) / 2);
-    height: 440px;
   }
   .portfolio__item:nth-child(odd) {
     margin-right: 30px;
@@ -1640,7 +1636,6 @@ picture {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: calc((100% - 60px) / 3);
-    height: 404px;
   }
   .portfolio__item:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -1657,28 +1652,20 @@ picture {
 }
 
 .portfolio__thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 294px;
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio__thumb {
-    height: 294px;
-  }
-}
-
 .portfolio__link {
-  color: inherit;
-  display: block;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
+  color: inherit;
   overflow: hidden;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1696,33 +1683,17 @@ picture {
 }
 
 .portfolio__text {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: none;
-  overflow: hidden;
-  height: 110px;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__text {
-    height: 146px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__text {
-    height: 110px;
-  }
 }
 
 .portfolio__image {
-  display: block;
   width: 100%;
-  height: 100%;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
@@ -1736,7 +1707,7 @@ picture {
   left: 0;
   top: 100%;
   width: 100%;
-  height: 294px;
+  height: 100%;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1804,6 +1775,9 @@ picture {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
@@ -1820,14 +1794,14 @@ picture {
 
 @media screen and (min-width: 768px) {
   .address {
-    margin-right: 70px;
-    margin-left: 76px;
+    margin-left: calc(76px - 15px);
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .address {
     margin-left: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1886,6 +1860,10 @@ picture {
   z-index: 3;
 }
 
+.menu__button--is-open {
+  position: fixed;
+}
+
 .menu__button:hover, .menu__button:focus {
   cursor: pointer;
   color: #2196f3;
@@ -1911,17 +1889,17 @@ picture {
 
 .menu__button--is-open .close__icon {
   display: block;
+  position: fixed;
 }
 
 .menu {
   display: none;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
-  width: 100%;
-  height: 796px;
-  padding: 46px 40px;
+  width: 100vw;
+  height: 100vh;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1929,6 +1907,11 @@ picture {
 
 .menu__button--is-open + .menu {
   display: block;
+}
+
+.menu__navigation {
+  margin-left: 40px;
+  margin-top: 48px;
 }
 
 .menu__item {
@@ -1969,6 +1952,10 @@ picture {
   color: #2196f3;
 }
 
+.menu__link--current {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 480px) {
   .menu__link {
     font-size: 40px;
@@ -1983,6 +1970,7 @@ picture {
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: #2196f3;
+  margin-left: 40px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1999,6 +1987,7 @@ picture {
   line-height: 1.166;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-left: 40px;
 }
 
 @media screen and (min-width: 480px) {
@@ -2011,6 +2000,7 @@ picture {
   display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 479px) {

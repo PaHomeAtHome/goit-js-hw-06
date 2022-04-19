@@ -23,6 +23,7 @@
     text-decoration: none;
     display: block;
     flex-wrap: wrap;
+    
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -30,11 +31,9 @@
 }
 
 .portfolio__item {
-    position: relative;
-    width: 100%;
-    height: 404px;
-    -webkit-tap-highlight-color: transparent;
 
+    -webkit-tap-highlight-color: transparent;
+    
 
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -43,7 +42,7 @@
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
         
-        height: 440px;
+        
         &:nth-child(odd) {
             margin-right: 30px;
         }
@@ -53,7 +52,7 @@
     @media screen and (min-width: 1200px) {
 
         width: calc((100% - 60px) / 3);
-        height: 404px;
+        
 
         &:not(:nth-child(3n)) {
             margin-right: 30px;
@@ -77,25 +76,17 @@
 }
 
 .portfolio__thumb {
-    display: flex;
     position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 294px;
     overflow: hidden;
-
-    @media screen and (min-width:480px) {
-        height: 294px;
-    }
 }
 
 .portfolio__link {
-    color: inherit;
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    color: inherit;
     overflow: hidden;
+
 
     transition-property: box-shadow;
     transition-duration: $transition-duration;
@@ -107,29 +98,15 @@
 }
 
 .portfolio__text {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
+    flex-grow: 1;
     border: $portfolio-border;
     padding: 20px 24px;
     border-top: none;
-    overflow: hidden;
-    height: 110px;
-
-    @media screen and (min-width: 768px) {
-        height: 146px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        height: 110px;
-    }
 }
 
 .portfolio__image {
-    display: block;
     width: 100%;
-    height: 100%;
+    display: block;
     object-fit: cover;
     overflow: hidden;
 }
@@ -140,7 +117,7 @@
     left: 0;
     top: 100%;
     width: 100%;
-    height: 294px;
+    height: 100%;
 
     transition-property: transform;
     transition-duration: $transition-duration;
