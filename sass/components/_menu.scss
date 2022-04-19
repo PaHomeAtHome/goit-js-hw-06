@@ -11,6 +11,7 @@
     &--is-open {
         position: fixed;
     }
+    
 
     &:hover,
     &:focus {
@@ -44,7 +45,7 @@
     display: none;
     z-index: 2;
     position: fixed;
-    
+    padding: 48px 40px;
 
     top: 0%;
     left: 0%;
@@ -56,25 +57,31 @@
     0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
+
     .menu__button--is-open + & {
-        display: block;
+        display: flex;
+        flex-direction: column;
        
     }
 }
 
 .menu__navigation {
-    margin-left: 40px;
-    margin-top: 48px;
+    margin-bottom: auto;
+    
 }
 
 .menu__item {
-    &:not(:last-child) {margin-bottom: 32px;}
-    margin-bottom: 151px;
+
+    @media screen and (max-height: 519px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-height: 520px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
     
-    @media screen and (min-width: 480px) {
-    &:last-child {
-        margin-bottom: 302px;}
-}
 @media screen and (min-width: 768px) {
    display: none;
 }
@@ -110,7 +117,12 @@
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: $hover-color;
-    margin-left: 40px;
+
+    @media screen and (max-height: 380px) {
+        margin-bottom: auto;
+        margin-top: 10px;
+    }
+
 
     @media screen and (min-width: 480px) {
     font-size: 34px;
@@ -125,7 +137,11 @@
     line-height: 1.166;
     letter-spacing: 0.02em;
     color: $primary-text-color;
-    margin-left: 40px;
+
+    @media screen and (max-height: 419px) {
+        margin-bottom: auto;
+        margin-top: 10px;
+    }
 
     @media screen and (min-width: 480px) {
         font-size: 24px;
@@ -133,9 +149,12 @@
 }
 
 .menu__social-list {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
-    margin-left: 40px;
+
+    @media screen and (max-height: 419px) {
+        margin-top: 10px;
+    }
 
     @media screen and (max-width: 479px) {
         &:not(:last-child) {
