@@ -8,8 +8,8 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-
-@media screen and (min-width: 768px) {
+    
+    @media screen and (min-width: 768px) {
    
         margin-bottom: 30px;
         justify-content: center;;
@@ -34,6 +34,7 @@
 &:not(:nth-last-child(-n+2)) {
     margin-bottom: 15px;
 }}
+
 @media screen and (min-width: 768px) {
 &:not(:nth-last-child(-n+2)) {
     margin-bottom: 0; }
@@ -42,7 +43,6 @@
     }
 }
 }
-
 
 .filter__button {
     background-color: $grey-background-color;

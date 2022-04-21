@@ -12,7 +12,6 @@
     @media screen and (min-width:480px) {
         font-size: $portfolio__title--font-size;
     line-height: $portfolio__title--line-height;}
-  
 }
 
 .portfolio__list {
@@ -24,7 +23,6 @@
     display: block;
     flex-wrap: wrap;
     
-
     @media screen and (min-width: 768px) {
         display: flex;
     }
@@ -34,7 +32,6 @@
 
     -webkit-tap-highlight-color: transparent;
     
-
     &:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -42,18 +39,15 @@
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
         
-        
         &:nth-child(odd) {
             margin-right: 30px;
         }
     }
     
-
     @media screen and (min-width: 1200px) {
 
         width: calc((100% - 60px) / 3);
         
-
         &:not(:nth-child(3n)) {
             margin-right: 30px;
         }
@@ -69,10 +63,6 @@
             margin-bottom: 0px;
         }
     }
-
-   
-
-        
 }
 
 .portfolio__thumb {
@@ -86,7 +76,6 @@
     height: 100%;
     color: inherit;
     overflow: hidden;
-
 
     transition-property: box-shadow;
     transition-duration: $transition-duration;
