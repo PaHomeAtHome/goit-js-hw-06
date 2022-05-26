@@ -11,26 +11,23 @@ const inputEl = document.querySelector(`.input`);
 
 createButton.addEventListener(`click`, createBoxes)
 destroyButton.addEventListener(`click`, destroyBoxes)
-inputEl.addEventListener(`input`, checkAmount)
-
-function checkAmount(event) {
-  if (parseInt(inputEl.value) > 100) {
-    return alert("100 boxes max")
-  }
-
-  if (parseInt(inputEl.value) <= 0) {
-    return alert("1 box min")
-  }
-}
 
 function createBoxes(event) {
 
   if (parseInt(inputEl.value) > 100) {
-    return alert("100 boxes max")
+    alert("100 boxes max");
+    return;
   }
 
   if (parseInt(inputEl.value) <= 0) {
-    return alert("1 box min")
+    alert("1 box min")
+    inputEl.value = 1;
+    return;
+  }
+
+  if (inputEl.value.length == 0) {
+    alert("Please insert box amount")
+    return;
   }
   
   boxesEl.innerHTML = ``;
